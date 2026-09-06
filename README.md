@@ -14,6 +14,28 @@ Fully tested and working with the **Atmoce MS-7K-U** (7 kWh LFP battery). Should
 
 ---
 
+## Installation
+
+**Requires Home Assistant 2024.12.0 or newer** — HACS will not offer the integration to older cores.
+
+### HACS (recommended)
+
+[![Open your Home Assistant instance and open this repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=pacorola&repository=Atmoce_battery_HA&category=integration)
+
+The button above opens this repository straight in your own HACS. To add it by hand instead:
+
+1. **HACS → ⋮ (top right) → Custom repositories**.
+2. Paste `https://github.com/pacorola/Atmoce_battery_HA`, choose type **Integration**, and press **Add**.
+3. Search for **Atmoce Battery** in HACS and press **Download**.
+4. **Restart Home Assistant** — the integration is not offered in the Add Integration list until you do.
+5. Continue with [Setup](#setup).
+
+### Manual
+
+Download the [latest release](https://github.com/pacorola/Atmoce_battery_HA/releases/latest), copy its `custom_components/atmoce` folder into your Home Assistant `config/custom_components/` directory, and restart Home Assistant.
+
+---
+
 ## Features
 
 - **24 sensors and a problem binary sensor** — grid, solar, battery, plus computed autonomy and self-consumption
@@ -24,15 +46,6 @@ Fully tested and working with the **Atmoce MS-7K-U** (7 kWh LFP battery). Should
 - **Cloud monitoring fallback** (optional, rarely needed) if the gateway stops answering over Modbus. Requires partner API keys that Atmoce issues to installers
 - **Diagnostics** — full state export with credentials and site identity redacted
 - **Trilingual** — English, Spanish and French, entity names and select options included
-
----
-
-## Installation via HACS
-
-1. In Home Assistant go to **HACS → Integrations → ⋮ → Custom repositories**.
-2. Add `https://github.com/pacorola/Atmoce_battery_HA` as an **Integration**.
-3. Search for **Atmoce Battery** and install.
-4. Restart Home Assistant.
 
 ---
 
