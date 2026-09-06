@@ -4,7 +4,7 @@
 
 # Atmoce Battery — Home Assistant Integration
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/default)
 [![GitHub release](https://img.shields.io/github/release/pacorola/Atmoce_battery_HA.svg)](https://github.com/pacorola/Atmoce_battery_HA/releases)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/pacorola)
 
@@ -20,15 +20,16 @@ Fully tested and working with the **Atmoce MS-7K-U** (7 kWh LFP battery). Should
 
 ### HACS (recommended)
 
+Atmoce Battery is in the **HACS default store**, so no custom repository is needed.
+
 [![Open your Home Assistant instance and open this repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=pacorola&repository=Atmoce_battery_HA&category=integration)
 
-The button above opens this repository straight in your own HACS. To add it by hand instead:
+The button above opens this repository straight in your own HACS. To do it by hand:
 
-1. **HACS → ⋮ (top right) → Custom repositories**.
-2. Paste `https://github.com/pacorola/Atmoce_battery_HA`, choose type **Integration**, and press **Add**.
-3. Search for **Atmoce Battery** in HACS and press **Download**.
-4. **Restart Home Assistant** — the integration is not offered in the Add Integration list until you do.
-5. Continue with [Setup](#setup).
+1. Open **HACS** in Home Assistant and search for **Atmoce Battery**.
+2. Press **Download**.
+3. **Restart Home Assistant** — the integration is not offered in the Add Integration list until you do.
+4. Continue with [Setup](#setup).
 
 ### Manual
 
